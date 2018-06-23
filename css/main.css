@@ -1,0 +1,682 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+@font-face {
+    font-family: 'PTS75F';
+    src:url('../fonts/ptsans-bold/PTS75F.ttf');
+    src:url('../fonts/ptsans-bold/PTS75F.ttf') format('embedded-opentype'),
+        url('../fonts/ptsans-bold/PTS75F.ttf') format('woff2'),
+        url('../fonts/ptsans-bold/PTS75F.ttf') format('woff'),
+        url('../fonts/ptsans-bold/PTS75F.ttf') format('truetype'),
+        url('../fonts/ptsans-bold/PTS75F.ttf') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src:url('../fonts/opensans-bold/OpenSans-Bold.ttf');
+    src:url('../fonts/opensans-bold/OpenSans-Bold.ttf') format('embedded-opentype'),
+        url('../fonts/opensans-bold/OpenSans-Bold.ttf') format('woff2'),
+        url('../fonts/opensans-bold/OpenSans-Bold.ttf') format('woff'),
+        url('../fonts/opensans-bold/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/opensans-bold/OpenSans-Bold.ttf') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:url('../fonts/opensans-bold/OpenSans-Regular.ttf');
+    src:url('../fonts/opensans-bold/OpenSans-Regular.ttf') format('embedded-opentype'),
+        url('../fonts/opensans-bold/OpenSans-Regular.ttf') format('woff2'),
+        url('../fonts/opensans-bold/OpenSans-Regular.ttf') format('woff'),
+        url('../fonts/opensans-bold/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/opensans-bold/OpenSans-Regular.ttf') format('svg');
+}
+
+body, html { 
+    margin: 0 auto;
+}
+
+/*======== HEADER =========*/
+
+header {
+    background: url(../img/bg_main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 60%;
+}
+
+header > div {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container .logo {
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+#container ul {
+    font-family: 'PTS75F', Arial, Georgia, Sans-serif;
+    font-size: 12px;
+    margin-right: 150px;
+    list-style: none;
+}
+
+#container li {
+    display: inline;
+    padding-left: 15px;
+}
+
+#container li a {
+    text-transform: uppercase;
+    color: rgba(102, 102, 153, 255);
+    text-decoration: none;
+}
+
+header .sub-container {
+    display: inline-block;
+    text-align: center;
+    margin-left: 11%;
+    width: 78%
+}
+
+.sub-container > p {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgba(102, 102, 153, 255);
+}
+
+.sub-container > h1 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 125px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(102, 102, 153, 255);
+    line-height: .8;
+}
+
+.sub-container > span {
+    font-family: 'OpenSans-Bold', Arial, Georgia, Sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(102, 102, 153, 255);
+}
+
+.sub-container a {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #ffffff;
+    background: linear-gradient(#666699, #666669);
+    padding: 18px 50px;
+    border-radius: 35px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.sub-container a:hover {
+    background: linear-gradient(#CCCCCC, #999999);
+    text-decoration: none;
+}
+
+/*======== OUR-WOKX =========*/
+
+#our-worx {
+    background: #ebebeb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30%;
+    height: 800px;
+}
+
+#our-worx .cout {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(102, 102, 153, 255);
+}
+
+#our-worx h2 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(102, 102, 153, 255);
+    text-align: center;
+    line-height: .8;
+}
+
+#our-worx img {
+    border-radius: 100%;
+    border: #efefef solid 20px;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#our-worx h1 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    text-transform: initial;
+    margin-left: 78px;
+    display: inline;
+    padding-right: 144px;
+    color: rgba(102, 102, 153, 255);
+}
+
+#our-worx h3 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    text-transform: initial;
+    margin-left: 85px;
+    display: inline;
+    padding-right: 144px;
+    color: rgba(102, 102, 153, 255);
+}
+
+#our-worx h4 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    text-transform: initial;
+    margin-left: 50px;
+    display: inline;
+    padding-right: 144px;
+    color: rgba(102, 102, 153, 255);
+}
+
+#our-worx h5 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    text-transform: initial;
+    margin-left: 88px;
+    display: inline;
+    padding-right: 144px;
+    color: rgba(102, 102, 153, 255);
+}
+
+#our-worx .qoute {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-transform: initial;
+    margin-left: 75px;
+    width: 18%;
+    line-height: 2;
+    color: rgba(102, 102, 153, 255);
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#our-worx .qoute1 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-transform: initial;
+    margin-left: 70px;
+    width: 18%;
+    line-height: 2;
+    color: rgba(102, 102, 153, 255);
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#our-worx a {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #ffffff;
+    background: linear-gradient(#666699, #666669);
+    margin-top: 50px;
+    padding: 18px 50px;
+    border-radius: 35px;
+    transition: all 0.2s linear;
+    margin-top: 20px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+#our-worx a:hover {
+    background: linear-gradient(#CCCCCC, #999999);
+    text-decoration: none;
+}
+
+#our-worx .btn1 {
+    text-align: center;
+}
+
+/*======== SUB-FOOTER =========*/
+
+#sub-footer {
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30%;
+    height: 130px;
+}
+
+#sub-footer h1 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    color: rgba(102, 102, 153, 255);
+    text-transform: initial;
+    margin-left: 78px;
+    padding-top: 60px;
+}
+
+#sub-footer p {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    color: rgba(102, 102, 153, 255);
+    text-transform: initial;
+    width: 25%;
+    display: inline-block;
+    margin-left: 78px;
+    line-height: 2;
+}
+
+#sub-footer .view-more1 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+    background-color: #4f4d6a;
+    padding: 6px 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 78px;
+    font-size: 12px;
+    color:#FFFFFF;
+}
+
+#sub-footer .view-more2 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+    background-color: #4f4d6a;
+    padding: 6px 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 300px;
+    font-size: 12px;
+    color:#FFFFFF;
+}
+
+#sub-footer .view-more3 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+    background-color: #4f4d6a;
+    padding: 6px 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 300px;
+    font-size: 12px;
+    color:#FFFFFF;
+}
+
+/*======== FOOTER =========*/
+
+#footer {
+    background-color: #505050;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+}
+
+#footer h1 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+    color: #fff;
+    margin-left: 78px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#footer h2 {
+    font-family: 'Georgia', Arial, Sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+    color: #fff;
+    margin-left: 525px;
+    padding-top: 30px;
+}
+
+#footer .f-awesome {
+    font-family: 'OpenSans-Regular', Arial, Sans-serif;
+    font-size: 12px;
+    width: 48%;
+    color: #fff;
+    margin-left: 78px;
+    line-height: 2;
+    text-transform: initial;
+}
+
+#footer .Copyright {
+    font-family: 'OpenSans-Regular', Arial, Sans-serif;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 78px;
+    padding-top: 50px;
+    text-transform: capitalize;
+}
+
+#footer .f-contactus {
+    font-family: 'OpenSans-Regular', Arial, Sans-serif;
+    font-size: 12px;
+    width: 23%;
+    color: #fff;
+    margin-right: 91px;
+    margin-top: -88px;
+    line-height: 2;
+    float: right;
+    display: inline-block;
+}
+
+/*
+ * Code fun!!
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when headerigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
